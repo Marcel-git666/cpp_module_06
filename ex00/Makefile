@@ -1,7 +1,7 @@
 # === Variables ===
 
 # The name of the executable
-NAME = scalarConverter
+NAME = convert
 
 # The compiler
 CC = c++

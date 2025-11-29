@@ -1,6 +1,7 @@
 #include "ScalarConverter.hpp"
 #include <cctype>
 #include <iomanip>
+#include <limits>
 #include <stddef.h>
 #include <string>
 

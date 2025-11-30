@@ -1,7 +1,7 @@
 # === Variables ===
 
 # The name of the executable
-NAME = serializer
+NAME = identify
 
 # The compiler
 CC = c++
@@ -20,11 +20,11 @@ OBJ_DIR = obj
 # === Files ===
 
 # List of all source (.cpp) files
-SRCS = main.cpp Serializer.cpp Data.cpp
+SRCS = main.cpp Base.cpp
 
 
 # List of all header (.hpp) files for dependency tracking
-HEADERS = Serializer.hpp Data.hpp \
+HEADERS = Base.hpp A.hpp B.hpp C.hpp \
 
 
 # Generate the list of object files from the source files

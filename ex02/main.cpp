@@ -1,6 +1,5 @@
 #include <cstdlib>
 #include <iostream>
-#include <typeinfo>
 
 #include "A.hpp"
 #include "B.hpp"
@@ -61,7 +60,7 @@ void identify(Base &p) {
         (void)a_ref;
         std::cout << "Actual type: A" << std::endl;
         return;
-    } catch (const std::bad_cast &e) {
+    } catch (const std::exception &e) {
     }
 
     try {
@@ -69,7 +68,7 @@ void identify(Base &p) {
         (void)b_ref;
         std::cout << "Actual type: B" << std::endl;
         return;
-    } catch (const std::bad_cast &e) {
+    } catch (const std::exception &e) {
     }
 
     try {
@@ -77,7 +76,7 @@ void identify(Base &p) {
         (void)c_ref;
         std::cout << "Actual type: C" << std::endl;
         return;
-    } catch (const std::bad_cast &e) {
+    } catch (const std::exception &e) {
         std::cout << "Actual type: Unknown" << std::endl;
     }
 }
